@@ -5,17 +5,19 @@ class Carousel {
         this.rightButton = this.carousel.querySelector('.right-button');
         this.images = this.carousel.querySelectorAll('img');
 
-        this.leftButton.addEventListener('click', this.moveImagesLeft());
-        this.rightButton.addEventListener('click', this.moveImagesRight());
+        this.leftButton.addEventListener('click', this.moveImages("left"));
+        this.rightButton.addEventListener('click', this.moveImages());
     }
 
-    moveImagesLeft() {
-        
+    moveImages(position) {
+        if(position === "left"){
+        //Out of time, intended to try and use TweenMAx to slide the images , Hopefully that works
+        }else{
+
+        }
     }
 
-    moveImagesRight() {
-
-    }
+   
 
 }
 
